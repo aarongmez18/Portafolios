@@ -1,0 +1,28 @@
+/* Tarjetas */
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 85%;
+    height: auto; /* Para que la altura se ajuste según el contenido */
+    transition: transform 0.3s;
+    display: flex;
+    align-content: center;
+    flex-direction: column; /* Cambio para que las tarjetas sean más flexibles en pantallas pequeñas */
+    align-items: center; /* Centrado de la imagen y texto */
+    justify-content: center;
+    margin-left: 75px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 5px;
+}

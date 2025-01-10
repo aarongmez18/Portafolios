@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Aaron</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/form.css">
+    <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+    <link rel="stylesheet" href="CSS/buttons.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul id="navLinks">
+            <li><a href="#" onclick="showSection('profile')">Perfil</a></li>
+            <li><a href="#" onclick="showSection('certifications')">Certificaciones</a></li>
+            <li><a href="#" onclick="showSection('knowled')">Conocimientos</a></li>
+            <li><a href="#" onclick="showSection('work')">Trabajos</a></li>
+            <li><a href="#" onclick="showSection('study')">Estudios</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contacto</a></li>
+        </ul>
+        <a href="PDF/Aarón CV Dic 2024.pdf" download="Curriculum_Aaron_Gomez">Descargar CV</a>
+
+    
+        <!-- Icono de menú hamburguesa -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    
+
+    <header>
+        <img src="IMG/FOTO.jpg" alt="Foto de Perfil">
+        <h1>Bienvenido, Soy Aarón Gómez</h1>
+        <p>Junior Java Backend Developer</p>
+    </header>
+
+    <div class="container">
+        <!-- Sección de Datos Personales -->
+        <div class="section active" id="profile">
+            <h2>Datos Personales</h2>
+            <hr>
+            <div class="info-item">
+                <h3>Nombre:</h3>
+                <p>Aarón Gómez Delgado</p>
+            </div>
+            <div class="info-item">
+                <h3>Residencia:</h3>
+                <p>Utrera, Sevilla.</p>
+            </div>
+            <div class="info-item">
+                <h3>Fecha de nacimiento:</h3>
+                <p>5 de Enero de 2002 </p>
+            </div>
+            <div class="info-item">
+                <h3>Sobre mí:</h3>
+                <p>Soy un apasionado del diseño y la programación, con experiencia creando experiencias interactivas y funcionales en la web. Mi especialidad está en el desarrollo backend, donde disfruto trabajando con sistemas robustos y escalables.
+                    <br> <br>
+                    Me encanta la programación y siempre estoy buscando aprender y mejorar mis habilidades. Soy una persona muy atenta, con gran atención al detalle, y disfruto trabajar en equipo, ya que creo que la colaboración potencia la creatividad y los resultados.
+                    <br>
+                    <ul>
+                        <li>Me gusta trabajar en equipo, compartiendo ideas y colaborando para lograr metas comunes.</li>
+                        <li>Creo que la clave del éxito está en combinar una planificación sólida con la ejecución eficiente y creativa.</li>
+                        <li>Soy una persona curiosa y autodidacta, siempre buscando cómo mejorar tanto en el ámbito técnico como en el personal.</li>
+                        <li>Valoro el cumplimiento de plazos y siempre procuro entregar mi trabajo a tiempo.</li>
+                        <li>Estoy enfocado en crecer constantemente en mi carrera y asumir nuevos retos.</li>
+                        <li>Siempre busco transmitir mis ideas de manera profesional y agradable</li>
+                        <li>Creo firmemente en la importancia de entender y apoyar a los demás en el entorno laboral.</li>
+                        <li>Me esfuerzo por asegurar que cada aspecto de mi trabajo esté cuidadosamente revisado y cumpla.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="info-item">
+                <h3>Perfil Laboral:</h3>
+                <p>Mi experiencia laboral comienza desde la orientación al servicio con una gran proactividad, paciencia y resiliencia. A lo largo de mi trayectoria he desarrollado una sólida capacidad de organización y he aprendido a trabajar eficazmente en equipo. Además, cuento con un trato cercano y siempre trato de ser amable y empático con el cliente, lo cual considero fundamental para establecer relaciones duraderas. Mi enfoque siempre está centrado en la mejora continua, lo que me motiva a buscar oportunidades de crecimiento personal y profesional.
+                    <br><br>
+                    Me adapto rápidamente a nuevos entornos y proyectos, enfrentando los retos con un pensamiento analítico y un alto grado de flexibilidad. Soy una persona detallista, con una alta capacidad para resolver problemas de forma rápida y eficiente. Creo firmemente que la comunicación efectiva es clave para alcanzar cualquier objetivo, ya sea dentro de un equipo o en la relación con clientes. Siempre estoy dispuesto a compartir conocimientos y aprender de los demás, lo que me permite fortalecer mi desempeño y contribuir al éxito colectivo.
+                    <br><br>
+                    Mis principios incluyen ser puntual, tener una actitud positiva y ofrecer alta calidad en todo lo que hago. Para mí, la empatía y la adaptabilidad son esenciales para entender las necesidades de los demás y encontrar soluciones adecuadas. Busco siempre dar lo mejor de mí mismo, contribuyendo a un ambiente de trabajo armonioso y productivo. Me apasiona poder transformar ideas y objetivos en resultados concretos, y espero poder seguir creciendo y aportando mis habilidades en proyectos desafiantes.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Certificaciones -->
+        <div class="section section-center" id="certifications">
+            <h2>Certificaciones</h2>
+            <hr>
+            <div class="card">
+                <img src="IMG/certifications/certificado_spring.png" alt="Certificación 1" class="cert-image">
+                <h3>Certificación en Spring Framework 6 & Spring Boot 3 desde cero a experto</h3>
+                <p>Obtención del certificado en Udemy de Spring Boot.</p>
+            </div>
+            <div class="card">
+                <img src="IMG/certifications/certificado_API.png" alt="Certificación 2" class="cert-image">
+                <h3>Curso de Implementación API Rest en Angular</h3>
+                <p>Certificación profesional en Implementación de API Rest en Angular.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Conocimientos -->
+        <div class="section" id="knowled">
+            <h2>Habilidades Técnicas</h2>
+            <hr>
+            <!-- Desarrollo Web -->
+            <h2>Desarrollo Web</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Angular</li>
+                <li>AJAX</li>
+                <li>JQuery</li>
+                <li>XQuery</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+            </ul>
+    
+            <!-- Bases de Datos -->
+            <h2>Bases de Datos</h2>
+            <ul>
+                <li>MySQL</li>
+                <li>XAMPP</li>
+                <li>Oracle SQL</li>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+            </ul>
+    
+            <!-- Desarrollo Backend -->
+            <h2>Desarrollo Backend</h2>
+            <ul>
+                <li>Java</li>
+                <li>JSP</li>
+                <li>POO</li>
+                <li>Spring</li>
+                <li>Spring Boot</li>
+                <li>Maven</li>
+                <li>JDBC</li>
+                <li>JPA</li>
+                <li>Hibernate</li>
+                <li>Swagger</li>
+                <li>Microsservicios</li>
+            </ul>
+    
+            <!-- Testing -->
+            <h2>Testing</h2>
+            <ul>
+                <li>Jasmine</li>
+                <li>Postman</li>
+            </ul>
+    
+            <!-- Contenedores y Virtualización -->
+            <h2>Contenedores y Virtualización</h2>
+            <ul>
+                <li>Docker</li>
+                <li>Podman</li>
+                <li>VirtualBox</li>
+            </ul>
+    
+            <!-- Control de Versiones -->
+            <h2>Control de Versiones</h2>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+    
+            <!-- IDEs y Herramientas -->
+            <h2>IDEs y Herramientas</h2>
+            <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ IDEA</li>
+                <li>NetBeans</li>
+                <li>Geany</li>
+                <li>Spring Tool Suite 3, 4 & 6</li>
+            </ul>
+    
+            <!-- Otros -->
+            <h2>Otros</h2>
+            <ul>
+                <li>Figma</li>
+                <li>Jira</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft PowerPoint</li>
+                <li>ChatGPT</li>
+            </ul>
+        </div>
+
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+
+<!-- Sección de Trabajos -->
+<div class="section section-center" id="work">
+    <h2>Trabajos Realizados</h2>
+    <hr>
+    <div class="card">
+        <h3>VAROSI STORE</h3>
+        <p>2024: Realicé e implementé tanto el frontend como el backend, la base de datos y la infraestructura de hosting. La aplicación se construyó utilizando tecnologías modernas, lo que me permitió desarrollar un sistema integral para la gestión de productos, usuarios y pedidos.</p>
+        <a href="http://varosies.wuaze.com/" target="_blank" class="btn-project">Ver Proyecto</a>
+    </div>
+    <div class="card">
+        <h3>RITA ROUGE</h3>
+        <p>2024: Trabajé en el desarrollo de una solución basada en microservicios utilizando Spring Boot, donde implementé varios servicios para mejorar la escalabilidad y el mantenimiento de la aplicación. Además, optimicé el diseño de la interfaz de usuario de una aplicación Angular, modificando el CSS y HTML para mejorar la experiencia de usuario y la accesibilidad.</p>
+        <a href="https://github.com/aarongmez18/RitaRouge" target="_blank" class="btn-project">Ver Proyecto</a>
+    </div>
+    <div class="card">
+        <h3>CHAOS CIRCLE</h3>
+        <p>2024: Videojuego web personal que desarrollé utilizando JavaScript, programación de la interacción de las bolas con el jugador, utilizando funciones de aleatorización para el movimiento y la velocidad de las bolas, aumentando la dificultad del juego progresivamente.</p>
+        <a href="https://github.com/aarongmez18/CircleChaos" target="_blank" class="btn-project">Ver Proyecto</a>
+    </div>
+    <div class="card">
+        <h3>SPOTIFY</h3>
+        <p>2024: Desarrollé una aplicación Spotify utilizando Spring Boot y aplicando arquitectura hexagonal. Implementé Swagger para la documentación de la API, JWT para la autenticación de usuarios e Hibernate para la gestión de la base de datos.</p>
+        <a href="https://github.com/aarongmez18/Spotify" target="_blank" class="btn-project">Ver Proyecto</a>
+    </div>
+</div>
+
+<div class="section" id="study">
+    <h2>Estudios</h2>
+    <hr>
+    <!-- Ciclo Formativo -->
+    <div class="education-item">
+        <h3>FPGS Desarrollo de Aplicaciones Web</h3>
+        <p><span class="highlight">Período:</span> Sep. 2022 – jun. 2024</p>
+        <p><span class="highlight">Institución:</span> IES Ruiz Gijón</p>
+    </div>
+
+    <!-- Permiso de circulación -->
+    <div class="education-item">
+        <h3>Permiso de Circulación B</h3>
+        <p><span class="highlight">Fecha de obtención:</span> Feb. 2022</p>
+    </div>
+
+    <!-- Bachillerato -->
+    <div class="education-item">
+        <h3>Bachillerato</h3>
+        <p><span class="highlight">Período:</span> Sep. 2020 – jun. 2022</p>
+        <p><span class="highlight">Institución:</span> IES Ruiz Gijón</p>
+    </div>
+
+    <!-- ESO -->
+    <div class="education-item">
+        <h3>Educación Secundaria Obligatoria (ESO)</h3>
+        <p><span class="highlight">Período:</span> Sep. 2014 – jun. 2020</p>
+        <p><span class="highlight">Institución:</span> IES José María Infantes</p>
+    </div>
+</div>
+
+
+        <!-- Sección de Contacto -->
+        <div class="section" id="contact">
+            <h2>Contacto</h2>
+            <hr>
+            <!-- Contenedor para los iconos de contacto -->
+            <div class="contact-icons">
+                <!-- Icono de correo -->
+                <a href="mailto:aarongmez18@gmail.com">
+                    <img src="IMG/icons/gmail.png" alt="Correo electrónico" width="50px">
+                    <p>aarongmez18@gmail.com</p>
+                </a>
+                
+                <!-- Icono de teléfono -->
+                <a href="tel:611424082">
+                    <img src="IMG/icons/ring-phone.png" alt="Teléfono" width="60px">
+                    <p>+34 (611) 424-082</p>
+                </a>
+            </div>
+            
+            <!-- Mapa de Google -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.8385338181845!2d-5.8211149!3d37.2062499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd134bf537bf77eb%3A0x96cb92ac8861c20a!2sUtrera!5e0!3m2!1ses!2ses!4v1673358194942!5m2!1ses!2ses"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="www.linkedin.com/in/aaron-gomez-delgado-a424812a3" target="_blank" class="social-icon">
+                <img src="IMG/icons/linkdein.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/aarongmez18" target="_blank" class="social-icon">
+                <img src="IMG/icons/github.png" alt="GitHub">
+            </a>
+            <a href="mailto:aarongmez18@gmail.com" class="social-icon">
+                <img src="IMG/icons/gmail.png" alt="Email">
+            </a>
+            <a href="https://www.instagram.com/aarongmez18/" target="_blank" class="social-icon">
+                <img src="IMG/icons/instagram.png" alt="Instagram">
+            </a>
+        </div>
+        <p>&copy; 2025 Aarón. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+<script src="JS/script.js"></script>
+
+
