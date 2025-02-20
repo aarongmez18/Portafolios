@@ -1,0 +1,112 @@
+@import url("../global/_variables.css");
+
+/* Estilo general para el contenedor de la experiencia */
+.experience-container {
+    width: 70%; /* Ancho del contenedor */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--c1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 100px;
+}
+
+/* Estilo para cada item de experiencia */
+.experience-item {
+    background-color: var(--c2);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para cada item */
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo para el título de la empresa/puesto */
+.experience-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--c1);
+    margin-bottom: 10px;
+}
+
+/* Estilo para el subtítulo (por ejemplo, ciclo formativo o puesto de prácticas) */
+.experience-subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    color: var(--c4);
+    margin-bottom: 10px;
+}
+
+/* Estilo para las fechas */
+.experience-date {
+    font-size: 1em;
+    color: var(--c4);
+    margin-bottom: 8px;
+}
+
+/* Estilo para la ubicación */
+.experience-location {
+    font-size: 1em;
+    color: var(--c4);
+    margin-bottom: 15px;
+}
+
+/* Estilo para la descripción de la experiencia */
+.experience-description {
+    font-size: 1em;
+    color: white;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Estilo para los párrafos */
+p {
+    margin: 0;
+}
+
+/* Media Queries para hacer el diseño más responsivo */
+
+/* Para pantallas de 768px o menos (Tabletas) */
+@media screen and (max-width: 768px) {
+    .experience-container {
+        width: 90%; /* El ancho será mayor en tabletas */
+        padding: 15px;
+    }
+
+    .experience-title {
+        font-size: 1.5em; /* Reducir tamaño del título */
+    }
+
+    .experience-subtitle {
+        font-size: 1.1em; /* Reducir tamaño del subtítulo */
+    }
+
+    .experience-description {
+        font-size: 0.95em; /* Reducir tamaño de la descripción */
+    }
+}
+
+/* Para pantallas de 480px o menos (Móviles pequeños) */
+@media screen and (max-width: 480px) {
+    .experience-container {
+        width: 95%; /* El ancho será casi completo en móviles pequeños */
+        padding: 10px;
+    }
+
+    .experience-title {
+        font-size: 1.3em; /* Reducir aún más el tamaño del título */
+    }
+
+    .experience-subtitle {
+        font-size: 1em; /* Reducir el subtítulo */
+    }
+
+    .experience-description {
+        font-size: 0.9em; /* Reducir aún más el tamaño de la descripción */
+    }
+}

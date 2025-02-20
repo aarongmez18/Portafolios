@@ -1,0 +1,93 @@
+@import url("../global/_variables.css");
+
+.projects-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.projects-title {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black; /* Grosor y color del borde */
+
+}
+
+/* Cada proyecto */
+.project-item {
+    background-color: var(--c4);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover */
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Círculo para cada logo de proyecto */
+.project-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c3);
+}
+
+/* Imagen de los logos dentro del círculo */
+.project-logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* Nombre del proyecto */
+.project-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: var(--c2);
+    margin: 10px 0;
+}
+
+/* Fecha del proyecto */
+.project-date {
+    font-size: 1.1em;
+    color: var(--c2);
+}
+
+/* Descripción breve del proyecto */
+.project-description {
+    font-size: 1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Habilidades o aptitudes */
+.project-skills {
+    font-size: 1em;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Enlace al repositorio del proyecto */
+.project-link {
+    font-size: 1.1em;
+    color: #e84a5f;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}

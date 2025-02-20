@@ -1,0 +1,96 @@
+@import url("../global/_variables.css");
+
+/* Estilo del Navbar */
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando sea necesario */
+    background-color: var(--c4);
+    width: 50%; /* Ancho reducido para pantallas grandes */
+    height: 50px;
+    border-radius: 10px;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 10px;
+    left: 25%; /* Centrado en pantallas grandes */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+/* Estilo de los botones del navbar */
+.navbar-button {
+    outline: 0 !important;
+    border: 0 !important;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Efecto al pasar el mouse */
+.navbar-button:hover {
+    transform: translateY(-3px);
+    color: var(--c2);
+}
+
+.icon {
+    font-size: 20px;
+}
+
+/* Cambio de color al hacer scroll */
+.scrolled {
+    background-color: var(--c3) !important; /* Color más rosado */
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas de 768px o menos */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        width: 80%; /* Navbar más ancho en dispositivos medianos */
+        left: 10%; /* Centrado en dispositivos medianos */
+    }
+
+    .navbar-button {
+        font-size: 1em; /* Ajuste del tamaño de la fuente */
+        padding: 8px 12px;
+    }
+
+    /* Alineación de los botones verticalmente */
+    .navbar-container {
+        flex-direction: column; /* Disposición vertical */
+        align-items: center; /* Alineación central de los botones */
+        gap: 15px; /* Espaciado entre los botones */
+    }
+}
+
+/* Para pantallas de 480px o menos (móviles pequeños) */
+@media screen and (max-width: 480px) {
+    .navbar-container {
+        width: 100%; /* Navbar ocupa el 100% del ancho en móviles pequeños */
+        left: 0;
+        padding: 10px; /* Aumentamos el padding para mejorar la visualización */
+    }
+
+    .navbar-button {
+        font-size: 1em; /* Ajuste del tamaño de la fuente */
+        padding: 10px 15px;
+    }
+
+    /* Alineación de los botones en columna */
+    .navbar-container {
+        flex-direction: column;
+        align-items: center; /* Alineación centrada de los botones */
+        gap: 20px; /* Espaciado mayor entre botones */
+    }
+}

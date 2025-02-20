@@ -1,0 +1,26 @@
+@import url("../global/_variables.css");
+  
+  /* Personalización de la barra de desplazamiento */
+    ::-webkit-scrollbar {
+        width: 12px;  /* Ancho de la barra de desplazamiento */
+        height: 12px; /* Alto (para el scroll horizontal) */
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: var(--c3);  /* Color de fondo del track */
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--c1); /* Color del "thumb" (parte movible) */
+        border-radius: 10px;
+        border: 3px solid var(--c2); /* Borde del "thumb" */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--c2); /* Cambio de color al pasar el mouse */
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color: var(--c4); /* Color de los botones (arriba/abajo) del scroll */
+    }

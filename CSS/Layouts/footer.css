@@ -1,0 +1,141 @@
+@import url("../global/_variables.css");
+
+/* Estilos para el footer */
+.contact-footer {
+    background-color: var(--c2); /* Color de fondo */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--c3); /* Color para el título */
+    text-transform: uppercase;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Ajustar los elementos de contacto */
+.contact-item {
+    width: 280px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Etiquetas */
+.contact-label {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+/* Enlaces de contacto */
+.contact-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+@media screen and (max-width: 768px) {
+    /* Título */
+    .footer-title {
+        font-size: 1.8em;
+    }
+
+    /* Ajustar el contenido de contacto para pantallas pequeñas */
+    .contact-details {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* Los elementos de contacto se ajustan al 100% del ancho */
+    .contact-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Ajustar los tamaños de texto para pantallas pequeñas */
+    .contact-label {
+        font-size: 1em;
+    }
+
+    .contact-link {
+        font-size: 1em;
+    }
+
+    /* Redes sociales ajustadas a la columna */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .social-link {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Título más pequeño en pantallas muy pequeñas */
+    .footer-title {
+        font-size: 1.6em;
+    }
+
+    /* Hacer las secciones más compactas */
+    .contact-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contact-label {
+        font-size: 0.9em;
+    }
+
+    .contact-link {
+        font-size: 1em;
+    }
+
+    .social-link {
+        font-size: 0.9em;
+    }
+}
