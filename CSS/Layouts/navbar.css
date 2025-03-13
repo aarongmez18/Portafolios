@@ -3,26 +3,27 @@
 /* Estilo del Navbar */
 .navbar-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando sea necesario */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
     background-color: var(--c4);
-    width: 50%; /* Ancho reducido para pantallas grandes */
+    width: 50%; /* Para pantallas grandes */
     height: 50px;
     border-radius: 10px;
-    padding: 3px;
+    padding: 5px;
     align-items: center;
     justify-content: space-around;
     position: fixed;
     top: 10px;
-    left: 25%; /* Centrado en pantallas grandes */
+    left: 25%; /* Centrado */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: background-color 0.5s ease-in-out;
     z-index: 1000;
+    overflow-x: hidden;
 }
 
-/* Estilo de los botones del navbar */
+/* Estilo de los botones */
 .navbar-button {
-    outline: 0 !important;
-    border: 0 !important;
+    outline: none;
+    border: none;
     padding: 10px 15px;
     border-radius: 10px;
     background-color: transparent;
@@ -37,60 +38,53 @@
     text-transform: uppercase;
 }
 
-/* Efecto al pasar el mouse */
 .navbar-button:hover {
     transform: translateY(-3px);
     color: var(--c2);
 }
 
-.icon {
-    font-size: 20px;
-}
-
 /* Cambio de color al hacer scroll */
 .scrolled {
-    background-color: var(--c3) !important; /* Color más rosado */
+    background-color: var(--c3) !important;
 }
 
 /* Media Queries para Responsividad */
 
-/* Para pantallas de 768px o menos */
-@media screen and (max-width: 768px) {
+/* Dispositivos medianos (Tablets) */
+@media screen and (max-width: 1220px) {
     .navbar-container {
-        width: 80%; /* Navbar más ancho en dispositivos medianos */
-        left: 10%; /* Centrado en dispositivos medianos */
+        width: 90%; /* Hacerlo más ancho */
+        left: 5%; /* Centrar mejor */
+        height: auto; /* Para que se adapte al contenido */
+        flex-direction: column; /* Organizar en columna */
+        padding: 10px;
+        top: 20px;
+        gap: 5px; /* Espaciado más controlado */
+        margin-bottom: 120px;
     }
 
     .navbar-button {
-        font-size: 1em; /* Ajuste del tamaño de la fuente */
+        font-size: 1em;
         padding: 8px 12px;
-    }
-
-    /* Alineación de los botones verticalmente */
-    .navbar-container {
-        flex-direction: column; /* Disposición vertical */
-        align-items: center; /* Alineación central de los botones */
-        gap: 15px; /* Espaciado entre los botones */
     }
 }
 
-/* Para pantallas de 480px o menos (móviles pequeños) */
+/* Dispositivos pequeños (Móviles) */
 @media screen and (max-width: 480px) {
     .navbar-container {
-        width: 100%; /* Navbar ocupa el 100% del ancho en móviles pequeños */
-        left: 0;
-        padding: 10px; /* Aumentamos el padding para mejorar la visualización */
+        position: static;
+        text-align: center;
+        width: 100%;
+        left: 25%;
+        top: 0;
+        height: auto;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px; /* Más espacio en móviles */
     }
 
     .navbar-button {
-        font-size: 1em; /* Ajuste del tamaño de la fuente */
-        padding: 10px 15px;
-    }
-
-    /* Alineación de los botones en columna */
-    .navbar-container {
-        flex-direction: column;
-        align-items: center; /* Alineación centrada de los botones */
-        gap: 20px; /* Espaciado mayor entre botones */
+        font-size: 0.9em;
+        padding: 5px 6px;
     }
 }

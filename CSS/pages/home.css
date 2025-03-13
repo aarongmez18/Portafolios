@@ -3,6 +3,7 @@
 body {
 
     overflow-x: hidden;
+    max-width: 100%;
     background: conic-gradient(
             from 45deg at 75% 75%,
             var(--c3) 90deg,

@@ -106,6 +106,7 @@ li {
     .aboutme-container {
         width: 90%; /* El ancho será mayor en móviles pequeños */
         padding: 20px; /* Reducir el padding */
+
     }
 
     .aboutme-title {
