@@ -58,7 +58,7 @@
         height: auto; /* Para que se adapte al contenido */
         flex-direction: column; /* Organizar en columna */
         padding: 10px;
-        top: 20px;
+        top: 10px;
         gap: 5px; /* Espaciado más controlado */
         margin-bottom: 120px;
     }
@@ -72,11 +72,11 @@
 /* Dispositivos pequeños (Móviles) */
 @media screen and (max-width: 480px) {
     .navbar-container {
-        position: static;
+        position: static; /* Cambiado a 'static' para que no se mueva */
         text-align: center;
-        width: 100%;
-        left: 25%;
-        top: 0;
+        width: 100%; /* Asegura que ocupe el 100% de la pantalla */
+        left: 0; /* Alineación con el borde */
+        top: 0; /* Mantiene el navbar en la parte superior */
         height: auto;
         flex-direction: column;
         padding: 15px;
